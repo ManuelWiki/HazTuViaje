@@ -5,67 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo-no-bg.png">
-    <style>
-        .global {
-            font-family:Arial, Helvetica, sans-serif;
-        }
-        body {
-            background-image: url('globos.jpg');
-        }
-        .card {
-            margin: auto;
-            border-width: 5px;
-            border-radius: 10px;
-            border-color: black;
-            width: 300px;
-            height: fit-content;
-            background-color: white;
-            padding: 10px;
-        }
-        .logo {
-            height: 100%;
-            width: 100%;
-        }
-        .centrar {
-            margin: 10px;
-            width: 80%;
-        }
-        .in {
-            background-color: lightgray;
-            border: none;
-            border-radius: 5px;
-            padding: 4px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .button {
-            color: white;
-            background-color: rgba(216,0,128,255);
-            border: none;
-            border-radius: 5px;
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Reserva Tu Viaje</title>
 </head>
 <body>
-    <div class="card global">
+    <div class="card normal-text">
         <img src="logo-no-bg.png" class="logo">
         <form method="POST" action="">
-            <label class="global centrar" for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" class="global centrar in">
+            <label class="normal-text centrar" for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="normal-text centrar in">
             <br>
-            <label  class="global centrar" for="tel">teléfono de Contacto:</label>
-            <input type="tel" name="tel" id="telefono" class="global centrar in">
+            <label  class="normal-text centrar" for="tel">teléfono de Contacto:</label>
+            <input type="tel" name="tel" id="telefono" class="normal-text centrar in">
             <br>
-            <label  class="global centrar" for="viaje">Elija su viaje:</label>
-            <select name="viaje" id="viaje" class="global centrar in">
+            <label  class="normal-text centrar" for="viaje">Elija su viaje:</label>
+            <select name="viaje" id="viaje" class="normal-text centrar in">
                 <option value="">Guadalajara, Martes 23/01/23 6:00</option>
                 <option value="">Mocorito, Jueves 03/02/23 12:00</option>
                 <option value="">Guanajuato, Viernes 21/03/22 6:00</option>
             </select>
             <br>
-            <input type="submit" value="Reservar Mi Lugar" class="global centrar button">
+            <input type="submit" value="Reservar Mi Lugar" class="normal-text centrar button">
         </form>
     </div>
 </body>
