@@ -3,6 +3,7 @@
     --azul-claro: rgb(2, 155, 222);
     --azul-aqua: rgb(0, 194, 167);
     --rosa: rgb(216, 0, 129);
+    --gris-medio: rgb(161, 161, 161);
 }
 .normal-text {
     font-family:Arial, Helvetica, sans-serif;
@@ -51,6 +52,31 @@ body {
     margin-bottom: 5px;
     box-sizing: border-box;
     width: 100%;
+}
+.in-seats-container {
+    display: flex;
+    justify-content: space-between;
+}
+.seat-column {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.seat {
+    background-color: var(--gris-medio);
+    margin: 5%;
+    padding: 10%;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.avail-seat:hover {
+    cursor: pointer;
+}
+.avail-seat {
+    background-color: var(--azul-claro);
+}
+.selected-seat {
+    background-color: var(--azul-aqua);
 }
 .h1 {
     margin-top: 10px;
