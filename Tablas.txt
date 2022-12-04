@@ -1,0 +1,24 @@
+Tablas
+Viajes:
+    ID
+    Fecha y hora
+    Destino
+    Camion
+    Costo por asiento
+    Origen (De dónde sale)
+Reservas
+    Folio
+    Viaje (su ID)
+    Nombre
+    Contacto
+    Importe (Cuánto ha pagado)
+    Cuándo pagó
+    Asiento
+Camiones
+    ID
+    Numero de asientos
+
+Acciones:
+    Agregar
+    Borrar
+    Editar (incluye confirmar reserva)

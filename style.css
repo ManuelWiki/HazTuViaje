@@ -4,6 +4,10 @@
     --azul-aqua: rgb(0, 194, 167);
     --rosa: rgb(216, 0, 129);
     --gris-medio: rgb(161, 161, 161);
+    --gris-claro: rgb(231, 231, 231);
+    --grande: 32px;
+    --mediana: 16px;
+    --chica: 16px;
 }
 .normal-text {
     font-family:Arial, Helvetica, sans-serif;
@@ -16,13 +20,48 @@ body {
     border-radius: 10px;
     padding: 10px;
 }
-.card {
+.card-big {
+    padding: 20px;
+    margin: auto;
+    border: none;
+    width: 80%;
+    height: 80%;
+    height: fit-content;
+    background-color: white;
+}
+.card-vertical {
     padding: 20px;
     margin: auto;
     border: none;
     max-width: 300px;
     height: fit-content;
     background-color: white;
+}
+.card-horizontal {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: white;
+}
+.card-header {
+    background-color: var(--azul-claro);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-body {
+    border: inset;
+    height: fit-content;
+    padding: 10px;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-color: var(--gris-medio);
+    border-radius: 0px 0px 10px 10px;
+    border-style: solid;
 }
 .logo {
     height: 100%;
@@ -39,6 +78,14 @@ body {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button:disabled {
+    background-color: rgb(247, 160, 212);
+}
+.fill-width {
+    width: 100%;
 }
 .in {
     background-color: lightgray;
@@ -51,7 +98,11 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     box-sizing: border-box;
+}
+.in-container {
     width: 100%;
+    display: flex;
+    justify-content: stretch;
 }
 .in-seats-container {
     display: flex;
@@ -85,4 +136,42 @@ body {
     margin-left: 10px;
     text-align: center;
     color: var(--azul-oscuro);
+}
+.align-left {
+    text-align: left;
+}
+.white {
+    color: white;
+}
+.h2 {
+    margin: 0px;
+    font-size: var(--mediana);
+}
+.viaje {
+    margin-bottom: 30px;
+}
+.table {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    border-spacing: 0px;
+}
+.table .th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.table .th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.th {
+    background-color: var(--azul-claro);
+    border: none;
+}
+.table-cell {
+    border-color: black;
+    padding: 5px;
+}
+.td {
+    background-color: var(--gris-claro);
 }
