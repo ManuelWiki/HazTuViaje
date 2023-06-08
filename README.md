@@ -3,7 +3,7 @@ Full Stack web application to manage tour-trips, book reservations and more. Thi
 
 # Screenshots
 
-# Log-in as admin
+## Log-in as admin
 
 ## Manage vehicles
 
