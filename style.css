@@ -150,6 +150,13 @@ body {
 .viaje {
     margin-bottom: 30px;
 }
+.table-container {
+    overflow-x: scroll;
+}
+.table-body-container {
+    overflow-y: scroll;
+    max-height: 1em;
+}
 .table {
     width: 100%;
     text-align: left;
